@@ -3506,3 +3506,19 @@ INSERT INTO `areainfo` VALUES ('659006', '铁门关市', '659000');
 INSERT INTO `areainfo` VALUES ('710000', '台湾省', NULL);
 INSERT INTO `areainfo` VALUES ('810000', '香港特别行政区', NULL);
 INSERT INTO `areainfo` VALUES ('820000', '澳门特别行政区', NULL);
+
+
+
+-- 根据需要自行修改：
+-- 修改时间:2017-12-06 zjcjava@163.com
+-- 去掉 省直辖县级行政区划 这一虚拟级别(不真实存在的行政名称) 直接把省直辖市的PARENT_ID=省级ID
+-- UPDATE  t_sys_region SET PARENT_ID=130000  WHERE   PARENT_ID=139000;
+-- UPDATE  t_sys_region SET PARENT_ID=410000  WHERE   PARENT_ID=419000;
+-- UPDATE  t_sys_region SET PARENT_ID=420000  WHERE   PARENT_ID=429000;
+-- UPDATE  t_sys_region SET PARENT_ID=460000  WHERE   PARENT_ID=469000;
+-- UPDATE  t_sys_region SET PARENT_ID=650000  WHERE   PARENT_ID=659000;
+
+
+
+
+
